@@ -14,7 +14,7 @@ odd.addEventListener("click", function(event)
 
     do {
         number = parseInt(prompt("Scegli un numero fra 0 e 5"));
-    } while (number < 0 || number > 5)
+    } while (number < 0 || number > 5 || isNaN(number))
 
     const messageChose = document.querySelector(".chose")
     messageChose.innerHTML = `Hai scelto ${chose}, il tuo numero è ${number}`
